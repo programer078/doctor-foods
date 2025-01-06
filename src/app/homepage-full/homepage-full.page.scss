@@ -1,0 +1,361 @@
+// .meain {
+//     height: 220px;
+//     width: 100%;
+//     background-color: #7ba47b; /* Adjust the color as needed */
+//     border-bottom-left-radius: 25px;
+//     border-bottom-right-radius: 25px;
+
+//     // clip-path: path("M0,200 Q20,220 40,200 T80,200 T120,200 T160,200 T200,200 T240,200 T280,200 T320,200 T360,200 T400,200 T440,200 V0 H0 Z");
+
+//   }
+//   .df{
+//     color: white;
+//     text-align: center;
+//     font-weight: bolder;
+//   }
+
+// //   @media (min-width: 900px) and (max-width: 1600px) {
+// //     .meain{
+// // width: 27%;
+// // margin-inline: auto;
+  
+// //   }
+
+// //   }
+.df {
+  color: #556b2f;
+  font-size: x-large;
+  font-weight: bolder;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #556b2f;
+  font-family: 'Pacifico', cursive;
+
+}
+.co{
+ justify-content: center;
+  align-items: center;
+   display: flex;
+}
+swiper-container::part(bullet-active){
+  background-color: white;
+}
+.img1{
+  height: 170px; width: 95%;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-image: url(../../assets/icon/spic.jpg);
+  background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  // border: solid 1px black;
+  background-color: black;
+  max-height: 160px;
+}
+.img1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  border-radius: 10px;
+  z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+.img1 .card {
+  position: relative;
+  margin-top: 0px;
+  margin-top: 3px;
+  z-index: 1; /* Make sure text is above the overlay */
+  color: white; /* Optional: To make text stand out */
+}
+.img2{
+  height: 170px; width: 95%;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-image: url(../../assets/icon/mixd.png);
+  background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  // border: solid 1px black;
+  background-color: black;
+  max-height: 160px;
+}
+.img2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  border-radius: 10px;
+  z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+.img2 .card {
+  position: relative;
+  margin-top: 0px;
+  margin-top: 3px;
+  z-index: 1; /* Make sure text is above the overlay */
+  color: white; /* Optional: To make text stand out */
+}
+.img3{
+  height: 170px; width: 95%;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-image: url(../../assets/icon/sams.jpg);
+  background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  // border: solid 1px black;
+  background-color: black;
+  max-height: 160px;
+}
+.img3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  border-radius: 10px;
+  z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+.img3 .card {
+  position: relative;
+  z-index: 1;
+  margin-top: 0px;
+  margin-top: 3px; /* Make sure text is above the overlay */
+  color: white; /* Optional: To make text stand out */
+}
+.img4{
+  height: 170px; width: 95%;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-image: url(../../assets/icon/colves.png);
+  background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  // border: solid 1px black;
+  background-color: black;
+  max-height: 160px;
+}
+.img4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  border-radius: 10px;
+  z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+.img4 .card {
+  position: relative;
+  margin-top: 0px;
+  margin-top: 3px;
+  z-index: 1; /* Make sure text is above the overlay */
+  color: white; /* Optional: To make text stand out */
+}
+.img5{
+  height: 170px; width: 95%;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-image: url(../../assets/icon/paper.png);
+  background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  // border: solid 1px black;
+  background-color: black;
+  max-height: 160px;
+}
+.img5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  border-radius: 10px;
+  z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+.img5 .card {
+  position: relative;
+  margin-top: 0px;
+  margin-top: 3px;
+  z-index: 1; /* Make sure text is above the overlay */
+  color: white; /* Optional: To make text stand out */
+}
+.d {
+  font-size: 11px;
+}
+.pic{
+  height: 35px; width: 35px;
+  border: solid 1px #556b2f;
+ border-radius: 3px;
+ background-image: url(../../assets/icon/awa.jpeg);
+ background-position: center;
+ background-size: cover;
+  
+}
+.bottom{
+  width: 90%;
+  height: 50px;
+  border-radius: 50px;
+  position: fixed;
+ bottom: 0px;
+ margin: 20px 20px;
+ --background: black;
+
+  
+  
+}
+.a{
+  --border-color:white;
+  --background: white;
+}
+.item-name{
+  height: 30px; 
+  width: 100%; 
+  margin-top: 10px;
+   display: flex; 
+  justify-content: space-between;
+}
+.serch{
+  height: 40px; width: 100%;
+  border: solid 1px #556b2f;
+  border-radius: 3px;
+  align-items: center;
+  display: flex;
+}
+.seox{
+  height: 30px;
+   width: 30px;
+    color: gray; 
+    margin-left: 10px;
+  }
+  .p1x{
+    color: gray;
+    margin-left: 10px;
+    
+  }
+  
+.search{
+  height: 50px; width: 75%;
+  float: left;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+.card{
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  margin-left: 20px;
+  font-family: 'Pacifico', cursive;
+
+}
+.gre{
+  font-size: medium;
+  font-weight: normal;
+}
+.thirty{
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: italic;
+}
+.all {
+  height: 35px; /* Fixed height */
+  width: 90px; /* Fixed width */
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.281);
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto; /* Center horizontally in the page */
+}
+.all2 {
+  height: 35px; /* Fixed height */
+  width: 80px;
+  margin-left: 10px; /* Fixed width */
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.281);
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto; /* Center horizontally in the page */
+}
+.all1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 14px; /* Font size for better fit */
+  text-align: center;
+  font-weight: bolder;
+  word-wrap: break-word; /* Wrap text if necessary */
+}
+.first{
+  height: 50px; width: 100%;
+  margin-inline: auto;
+}
+
+
+.image-container {
+  background-color: rgb(240, 235, 194);
+  text-align: center;
+  padding: 10px; /* Padding around the image for spacing */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: 80px;
+  display: block; /* Ensures image is centered */
+  margin: 0 auto; /* Centers image horizontally */
+}
+.cardmom{
+  font-size: 15px;
+  margin-left: 5px;
+  font-family: 'Pacifico', cursive;
+
+}
+.price{
+ color: black;
+ font-weight: bolder;
+ font-family: 'Pacifico', cursive;
+ float: left;
+ padding-top:5px;
+}
+.aa{
+  height: 10px;
+}
+.heart{
+  height: 30px; width: 30px;
+  border-radius: 15px;
+  border: solid 1px black;
+  float: right;
+  margin-right: 3px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.ili{
+float: right; margin-right: 3px;
+
+}
+.all.selected {
+  background-color: black;
+  color: white;
+}
+
+.all.selected .all1 {
+  color: white !important; /* Ensures text color is white when the item is selected */
+}
+

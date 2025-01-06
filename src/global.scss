@@ -1,0 +1,35 @@
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/* Enforce light theme globally */
+.light-theme {
+  --ion-background-color: #ffffff;
+  --ion-text-color: #000000;
+  --ion-toolbar-background: #ffffff;
+  --ion-toolbar-text-color: #000000;
+  /* Add any other color overrides for light theme */
+}
+
+/* Prevent dark mode from applying when system is in dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override dark mode colors to light */
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+    --ion-toolbar-background: #ffffff;
+    --ion-toolbar-text-color: #000000;
+  }
+}
+
+/* Remove any dark mode imports to avoid conflicts */

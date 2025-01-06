@@ -1,0 +1,181 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="10">
+        <a class="df"><span class="d">Doctor</span> <br> Foods</a>
+      </ion-col>
+      <ion-col size="2" class="co">
+        <ion-list class="pic"></ion-list>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+      <ion-list class="serch">
+           <ion-list class="search">
+      <ion-icon name="search-outline" class="seox"></ion-icon>
+      <ion-input placeholder="Search" class="p1x">
+      </ion-input>
+    </ion-list>
+      </ion-list>
+      </ion-col>
+    
+
+    </ion-row>
+  </ion-grid>
+  
+
+  <swiper-container [breakpoints]="
+  {
+    '360':{
+      'slidesPerView': 1,
+      'spaceBetween': 10,
+    },
+    '760':{
+      'slidesPerView':4,
+      'spaceBetween': 10,
+    },
+    '1221':{
+      'slidesPerView': 4,
+      'spaceBetween': 40,
+    }
+  }
+  "
+  class="mySwiper custom-swiper" pagination="true" [loop]="true" [autoplay]="true">
+  <swiper-slide>
+ <ion-list class="img1">
+  <p class="card"><span class="gre">Mix </span> <br> Spices
+  <br>  <span class="thirty">30% <br> OFF</span> </p>
+ </ion-list>
+ </swiper-slide>
+ <swiper-slide>
+  <ion-list class="img2">
+    <p class="card"><span class="gre">Mix</span> <br> Dry fruit
+    <br>  <span class="thirty">30% <br> OFF</span> </p>
+   </ion-list>
+   </swiper-slide>
+  <swiper-slide>
+    <ion-list class="img3">
+      <p class="card"><span class="gre">Green </span> <br> Cardamom
+      <br>  <span class="thirty">30% <br> OFF</span> </p>
+     </ion-list>
+
+   </swiper-slide>
+    <swiper-slide>
+      <ion-list class="img4">
+        <p class="card"><span class="gre">Desi </span> <br> Cloves
+        <br>  <span class="thirty">30% <br> OFF</span> </p>
+       </ion-list>
+
+   </swiper-slide>
+   <swiper-slide>
+    <ion-list class="img5">
+      <p class="card"><span class="gre">Black </span> <br> Papper
+      <br>  <span class="thirty">30% <br> OFF</span> </p>
+     </ion-list>
+
+   </swiper-slide>
+  </swiper-container>
+  <br>
+<ion-list class="first">
+  <swiper-container [breakpoints]="
+  {
+    '360':{
+      'slidesPerView': 3.5,
+      'spaceBetween': 10,
+    },
+    '760':{
+      'slidesPerView':5,
+      'spaceBetween': 10,
+    },
+    '1221':{
+      'slidesPerView': 5,
+      'spaceBetween': 40,
+    }
+  }
+  "
+  class="mySwiper custom-swiper"  [loop]="true" [autoplay]="true">
+  <swiper-slide>
+    <ion-list class="all2" (click)="showProducts('all')">
+      <p class="all1">All</p>
+    </ion-list>
+ </swiper-slide>
+ <swiper-slide>
+  <ion-list class="all" (click)="showProducts('dryFruits')">
+    <p class="all1">Dry fruit</p>
+
+  </ion-list>
+   </swiper-slide>
+  <swiper-slide>
+    <ion-list class="all" (click)="showProducts('spices')">
+    <p class="all1">Spices</p>
+    </ion-list>
+   </swiper-slide>
+    <swiper-slide>
+      <ion-list class="all" (click)="showProducts('powdered')">
+    <p class="all1">Powdered</p>
+      </ion-list>
+
+   </swiper-slide>
+   <swiper-slide>
+    <ion-list class="all" (click)="showProducts('nuts')">
+      <p class="all1">Nuts</p>
+    </ion-list>
+   </swiper-slide>
+   <swiper-slide>
+    <ion-list class="all" (click)="showProducts('mixDry')">
+      <p class="all1">Mix dry</p>
+    </ion-list>
+   </swiper-slide>
+  </swiper-container>
+</ion-list>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col size="6" size-md="2" *ngFor="let product of filteredProducts">
+      <ion-card >
+        <!-- Upper Section with Image -->
+        <div class="image-container">
+          <img [src]="product.img" alt="Sample Image" />
+        </div>
+        <!-- Lower Section with Details -->
+       <p class="cardmom">{{product.name}}<span class="ili">{{product.nameurdu}}</span>
+         <br>{{product.weght}}g <br>  <span class="price">{{product.price}}/Pkr</span> <ion-list class="heart">
+        <ion-icon [name]="product.icon" color="dark" size="medium"></ion-icon>
+       </ion-list> </p>
+       <br> 
+       <ion-list class="aa"></ion-list>
+      </ion-card>
+    </ion-col>
+    
+  </ion-row>
+</ion-grid>
+<ion-footer class="aa">
+  <ion-tab-bar slot="bottom" class="bottom" style=" color: black;">
+    <ion-tab-button tab="home">
+   <ion-icon name="home-outline" style="height: 20px; width: 20px; color: white;"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="radio">
+      <ion-icon name="bag-remove-outline" style="height: 20px; width: 20px; color: white;"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="radio">
+      <ion-button shape="round" class="a">
+        <ion-icon slot="icon-only" name="heart" style="color: rgb(46, 137, 134);"></ion-icon>
+      </ion-button>
+     <!-- <ion-list style="height: 40px; width: 40px; border: solid 1px black; border-radius: 25px;">
+      <ion-icon name="heart" style="height: 30px; width: 20px; color: rgb(46, 137, 134); margin-top: 5px;"></ion-icon> -->
+     <!-- </ion-list> -->
+    </ion-tab-button>
+    <ion-tab-button tab="library">
+      <ion-icon name="chatbox-ellipses-outline" style="height: 20px; width: 20px; color: white;"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="search">
+      <ion-icon name="person-circle-outline" style="height: 20px; width: 20px; color: white; display: flex; justify-content: center; align-items: center;">
+      </ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>
+</ion-content>

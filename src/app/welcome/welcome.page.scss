@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+.spices{
+    height: 400px; width: 90%;
+    margin-inline: auto;
+    border: solid 1px white;
+    background-image: url(../../assets/icon/Image.png);
+    background-position: center;
+    background-size: cover;
+}
+.int{
+    height: 300px; width: 90%;
+    margin-inline: auto;
+}
+.text-list {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .text-list li {
+    margin-bottom: 10px;
+    list-style-position: inside; /* Keep bullets inside the padding */
+    padding-left: 20px; /* Creates space for text alignment */
+    text-indent: -20px; /* Aligns the second line with the text, not the bullet */
+  }
+  
+  @media (max-width: 768px) {
+    .text-list {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-list {
+      font-size: 12px;
+    }
+  }
+  
+@media (min-width: 900px) and (max-width: 1600px) {
+    .int{
+
+        height: 300px; width: 90%;
+        margin-inline: auto;
+  }
+
+  }
+.main{
+    height: 950px;
+    width: 100%;
+}
+@media (min-width: 900px) and (max-width: 1600px) {
+    .main{
+width: 25%;
+margin-inline: auto;
+  
+  }
+
+  }
+
+.logo-container {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    color: #556b2f; /* Dark olive green */
+    border: 2px solid #556b2f;
+    border-radius: 30px;
+    padding: 20px 40px;
+    width: 90%;
+    max-width: 600px; /* Optional max width for better appearance on larger screens */
+    margin: 0 auto; /* Center the container */
+    position: relative;
+}
+.text-list {
+    list-style-type: none;
+    padding: 0;
+}
+.text-list li {
+    margin-bottom: 10px; /* Add 10px space after each line */
+}
+.text-list li::before {
+    content: "● ";
+    font-weight: bold;
+    color: black;
+}
+.ar{
+    font-size: large;
+    color: #556b2f;
+    font-weight: bolder;
+}
+.get-started-button {
+    display: block; /* Makes the button a block element */
+    margin: 0px auto 0; /* Centers the button */
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(45deg, #556b2f, #6b8e23);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Fade-in animation for elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    font-size: 15px;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Slide-in animation for text */
+  .slide-in {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .mit{
+    height: 250px; width: 100%;
+  }
+  /* Zoom-in animation for text */
+  .zoom-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .zoom-in.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  
+.get-started-button:hover {
+    background: linear-gradient(45deg, #6b8e23, #556b2f);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+.logo-title {
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.logo-subtitle {
+    font-size: 1em;
+    letter-spacing: 2px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 10px;
+}
+.quality-text {
+    font-size: 1em;
+    font-style: italic;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 10px;
+}
